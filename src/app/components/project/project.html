@@ -1,0 +1,42 @@
+<li class="mb-12 mt-12">
+  <div
+    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100 lg:group-hover/list:opacity-50"
+  >
+    <div class="z-10 sm:order-2 sm:col-span-6">
+      <h3>
+        <a
+          href="{{project().url}}"
+          class="inline-flex items-baseline font-medium text-xl leading-tight text-gray-600 dark:text-green-300 dark:hover:text-green-300/80"
+        >
+          <span>{{project().name}}</span>
+        </a>
+      </h3>
+      <p class="mt-2 text-sm leading-normal text-slate-600 dark:text-gray-300 font-semibold">
+        {{project().description}}
+      </p>
+      <ul class="mt-2 flex flex-wrap">
+        @for(ln of project().languages; track $index){
+        <li class="mr-1.5 mt-2">
+          <div
+            class="flex items-center rounded-full bg-[#d5deef] dark:bg-green-400/10 dark:hover:bg-green-400/20 px-3 py-1 text-sm font-medium leading-5 text-gray-500 dark:text-green-300 font-geist-mono"
+          >
+            <app-icons name="{{ln.toLowerCase()}}" />
+            {{ln}}
+          </div>
+        </li>
+        }
+      </ul>
+    </div>
+    <!--<Image
+            alt="just an hidden image"
+            loading="lazy"
+            width={200}
+            height={48}
+            decoding="async"
+            data-nimg="1"
+            class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1 opacity-0 hidden md:block"
+            style="color:transparent"
+            src="./assets/developer.svg"
+          />-->
+  </div>
+</li>
