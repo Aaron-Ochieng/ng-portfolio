@@ -1,12 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { SectionA } from './components/section-a/section-a';
+import { SectionB } from './components/section-b/section-b';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, SectionA, SectionB],
   templateUrl: './app.html',
 })
-export class App {
-  protected readonly title = signal('ng-portfolio');
-  protected readonly name = signal('Aaron Ochieng');
-}
+export class App {}
