@@ -2,11 +2,13 @@ import { Component, signal } from '@angular/core';
 import { intro, work, projects } from '../../../data/intro';
 import { Card } from '../card/card';
 import { Project } from '../project/project';
+import {Experience} from '../experience/experience';
 
 @Component({
   selector: 'app-section-b',
-  imports: [Card, Project],
+  imports: [ Project, Experience],
   templateUrl: './section-b.html',
+  styleUrl: './section-b.css',
 })
 export class SectionB {
   protected readonly intro = signal(intro.intro);
