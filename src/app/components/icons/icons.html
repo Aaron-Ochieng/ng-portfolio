@@ -1,16 +1,33 @@
 @if (name() === "golang"){
-  <fa-icon [icon]="golang" class="mr-2"/>
+  <mat-icon svgIcon="golang"/>
 } @else if (name() === "git"){
-  <fa-icon [icon]="git" class="mr-2"/>
+  <mat-icon svgIcon="git" />
 } @else if (name() === "html"){
-  <fa-icon [icon]="html5" class="mr-2"/>
-}@else if (name() === "javascript"){
-  <fa-icon [icon]="js" class="mr-2"/>
-}@else if (name() === "react"){
-  <fa-icon [icon]="react" class="mr-2"/>
+  <mat-icon svgIcon="html"/>
+}@else if (name() === "typescript"){
+  <mat-icon svgIcon="javascript" />
+}@else if (name() === "react" || name() === "react-native"){
+  <mat-icon svgIcon="react" />
 }@else if (name() === "node"){
-  <fa-icon [icon]="node" class="mr-2"/>
+  <mat-icon svgIcon="node" />
 }@else if (name() === "docker"){
-  <fa-icon [icon]="docker" class="mr-2"/>
+  <mat-icon svgIcon="docker" />
+}@else if (name() === "flutter"){
+  <mat-icon svgIcon="flutter" />
+}@else if (name() === "figma" || name() === "ux"){
+  <mat-icon svgIcon="figma" />
+}@else if (name() === "python"){
+  <mat-icon svgIcon="python" />
+}@else if (name() === "sqlite" || name() === "sqlite3"){
+  <mat-icon svgIcon="sqlite" />
+}@else if (name() === "mongodb"){
+  <mat-icon svgIcon="mongo" />
+}@else if (name() === "shell"){
+  <mat-icon svgIcon="bash" />
+}@else if (name() === "c"){
+  <mat-icon svgIcon="c" />
+}@else if (name() === "makefile"){
+  <mat-icon svgIcon="make" />
+}@else if (name() === "ai"){
+  <mat-icon svgIcon="ai" />
 }
-
