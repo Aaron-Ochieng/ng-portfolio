@@ -1,10 +1,7 @@
 <div class="mb-12">
   <div
-    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100 lg:group-hover/list:opacity-50"
+    class="group relative row pb-1 transition-all sm:row-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100 lg:group-hover/list:opacity-50"
   >
-    <div
-      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block"
-    ></div>
     <header
       class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
       aria-label="{date}"
@@ -15,35 +12,35 @@
       <h3 class="font-medium leading-snug text-slate-200">
         <div>
           @if ( experience().url !== ""){
-          <div>
-            <a
-              href="{url}"
-              class="inline-flex items-baseline font-medium leading-tight text-slate-600 dark:text-green-400/80 text-base"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+            <div>
+              <a
+                href="{{experience().url}}"
+                class="inline-flex items-baseline font-medium leading-tight text-slate-600 dark:text-green-400/80 text-base"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
               <span
                 class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
               ></span>
-              <span class="text-xl">{{experience().company}}</span>
-            </a>
-          </div>
-          }@else{
-          <div>
-            <div
-              class="inline-flex items-baseline font-medium leading-tight text-slate-600 dark:text-green-400/80 text-base"
-            >
-              <span
-                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-              ></span>
-              <span class="text-xl">{{experience().company}}</span>
+                <span class="text-xl">{{experience().company}}</span>
+              </a>
             </div>
-          </div>
+          }@else{
+            <div>
+              <div
+                class="inline-flex items-baseline font-medium leading-tight text-slate-600 dark:text-green-400/80 text-base"
+              >
+              <span
+                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+              ></span>
+                <span class="text-xl">{{experience().company}}</span>
+              </div>
+            </div>
           }
         </div>
         <div>
           <div
-            class="text-orange-500 dark:text-lime-400 hover:dark:text-gray-200"
+            class="text-orange-500 dark:text-lime-400 hover:dark:text-gray-200 jetbrains-mono-semibold text-sm"
             aria-hidden="true"
           >
             {{experience().pos}}
@@ -51,23 +48,24 @@
         </div>
       </h3>
       <ul
-        class="mt-2 text-lg leading-normal text-gray-600 dark:text-gray-400 font-geist-mono font-normal"
+        class="mt-6 text-lg leading-normal text-gray-600 dark:text-gray-400 jetbrains-mono-normal"
       >
         @for (achievements of experience().desc; track $index){
         <li
-          class="mt-2 text-sm leading-normal text-gray-600 dark:text-gray-400 font-geist-mono font-normal"
+          class="mt-2 text-sm leading-normal text-gray-600 dark:text-gray-400 jetbrains-mono-normal"
         >
           {{ achievements }}
         </li>
         }
       </ul>
-      <ul className="mt-2 flex flex-wrap">
+      <ul class="mt-2 flex flex-wrap">
         @for (tech of experience().technology; track $index){
         <li class="mr-1.5 mt-2">
           <div
-            className="flex items-center rounded-full  bg-[#d5deef] hover:bg-gray-500/10 dark:bg-green-400/10 px-3 py-1 text-xs font-medium leading-5 text-gray-500 dark:text-green-300 font-[family-name:var(--font-geist-mono)]"
+            class="flex items-center rounded-full bg-orange-300/5 hover:bg-gray-500/10 dark:bg-green-400/10 px-3 py-1 text-xs font-medium leading-5 text-gray-500 dark:text-green-300 jetbrains-mono-normal"
           >
-            {{ tech }}
+            <app-icons name="{{ tech.toLowerCase() }}" class="mt-1" />
+            <p class="text-xs text-center">{{ tech }}</p>
           </div>
         </li>
         }
