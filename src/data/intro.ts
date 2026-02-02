@@ -5,7 +5,7 @@ export const intro = {
     I have a passion in creating seamless,beautiful and creative websites.
     I pay close attention to detail and strive for excellence in every design I create.
     I have experience with various programming languages specifically web technologies.
-    Life ia a continous and learning process so work makes me more rigorous.
+    Life ia a continuous and learning process so work makes me more rigorous.
     I'm always learning to keep up with the latest web and mobile development practices to stay ahead of the curve.`,
 };
 
@@ -26,7 +26,7 @@ export const work: WorkExperience[] = [
       'Collaborated with cross-functional teams to translate business requirements into technical specifications for AI-driven features.',
     ],
     pos: 'Lead backend Developer, Australia - Remote',
-    technology: ['Javascript', 'Git', 'Node', 'AI', 'Python'],
+    technology: ['Typescript', 'Git', 'Node', 'AI', 'Python'],
     date: 'Aug 2025 – Present',
     company: 'Berrijam AI',
     url: 'https://www.berrijam.com/',
@@ -42,7 +42,7 @@ export const work: WorkExperience[] = [
     ],
 
     pos: 'Lead Frontend Developer,  Uganda - Remote',
-    technology: ['Javascript', 'Git', 'Node', 'React'],
+    technology: ['Typescript', 'Git', 'Node', 'React'],
     date: 'Sept 2025 – Nov 2025',
     company: 'Pataparcel LTD',
     url: 'https://pickupwaka.com/',
@@ -66,7 +66,7 @@ export const work: WorkExperience[] = [
       'Collaborated effectively with cross-functional teams and stakeholders, demonstrating strong communication skills and a proactive problem-solving approach.',
     ],
     pos: 'Apprentice Developer',
-    technology: ['Golang', 'Javascript', 'HTML', 'Shell', 'UX', 'Node', 'Git', 'Docker'],
+    technology: ['Golang', 'Typescript', 'HTML', 'Shell', 'UX', 'Node', 'Git', 'Docker'],
     date: 'Apr, 2024 - Present',
     company: 'Zone 01 Kisumu',
     url: 'https://www.zone01kisumu.ke',
@@ -83,7 +83,7 @@ export const work: WorkExperience[] = [
   },
   {
     desc: [
-      'Within the period of attachment, I did maintaince of company computers',
+      'Within the period of attachment, I did maintenance of company computers',
       'Network Card installation, Hard-Disks & anti-virus installation.',
       'I also did capturing of data (sun system) to the server and report preparation in the Finance Department - ICT Section',
     ],
@@ -106,13 +106,13 @@ export const projects: Projects[] = [
     name: 'Social Network',
     description:
       'A facebook like React web app with reaal-time notification and messaging features',
-    languages: ['React', 'Golang', 'Javascript', 'SQLite'],
+    languages: ['React', 'Golang', 'Typescript', 'SQLite'],
     url: 'https://pickupwaka.com',
   },
   {
     name: 'Lem-In',
     description:
-      'A golang project terminal application to deeepen my understanding of Algorithms. It uses BFS (Breadth First Search) Algorithm to find faster optimal path to place the ants without collusion.',
+      'A golang project terminal application to deepen my understanding of Algorithms. It uses BFS (Breadth First Search) Algorithm to find faster optimal path to place the ants without collusion.',
     languages: ['Golang'],
     url: 'https://github.com/Aaron-Ochieng/lem-in.git',
   },
@@ -120,7 +120,7 @@ export const projects: Projects[] = [
     name: 'Geolocalization',
     description:
       'A web project testing on api usage & displaying of maps on a webpage. The project generates coordinates (longitudes & latitude) based on a given location name & placing the markers on a map.',
-    languages: ['Golang', 'HTML', 'Javascript'],
+    languages: ['Golang', 'HTML', 'Typescript'],
     url: 'https://github.com/Aaron-Ochieng/go-geolocalization.git',
   },
   {
